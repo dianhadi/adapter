@@ -1,14 +1,14 @@
 package typec
 
 import (
-	"github.com/dianhadi/adapter/adapter"
+	"github.com/dianhadi/adapter/port"
 )
 
 type TypeC struct {
 	title string
 }
 
-func New(config adapter.Config) (*TypeC, error) {
+func New(config port.Config) (*TypeC, error) {
 	typeC := TypeC{
 		title: config.Title,
 	}

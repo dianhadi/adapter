@@ -10,5 +10,5 @@ Imagine you have a MacBook with a Type-C Thunderbolt port, a versatile and high-
 
 - main.go: The main entry point of the application.
 - mac/: Contains the core application logic, following the Ports and Adapters pattern.
-- adapter/: define the interfaces for connecting external devices.
-- port/: define various external devices, including USB Type-A, Micro USB, and USB Type-C.
+- port/: define the interfaces for connecting external devices.
+- adapter/: define various external devices, including USB Type-A, Micro USB, and USB Type-C.

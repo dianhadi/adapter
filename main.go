@@ -3,15 +3,15 @@ package main
 import (
 	"fmt"
 
-	"github.com/dianhadi/adapter/adapter"
+	"github.com/dianhadi/adapter/adapter/micro"
+	typeC "github.com/dianhadi/adapter/adapter/type-c"
+	"github.com/dianhadi/adapter/adapter/usb"
 	"github.com/dianhadi/adapter/mac"
-	"github.com/dianhadi/adapter/port/micro"
-	typeC "github.com/dianhadi/adapter/port/type-c"
-	"github.com/dianhadi/adapter/port/usb"
+	"github.com/dianhadi/adapter/port"
 )
 
 func main() {
-	configUsb := adapter.Config{
+	configUsb := port.Config{
 		Title: "USB",
 	}
 
@@ -20,7 +20,7 @@ func main() {
 		fmt.Println(err)
 	}
 
-	configMicro := adapter.Config{
+	configMicro := port.Config{
 		Title: "Micro",
 	}
 
@@ -29,7 +29,7 @@ func main() {
 		fmt.Println(err)
 	}
 
-	configTypeC := adapter.Config{
+	configTypeC := port.Config{
 		Title: "Type C",
 	}
 

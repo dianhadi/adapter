@@ -1,12 +1,12 @@
 package mac
 
-import "github.com/dianhadi/adapter/adapter"
+import "github.com/dianhadi/adapter/port"
 
 type Mac struct {
-	thunderbolt adapter.Adapter
+	thunderbolt port.Port
 }
 
-func New(thunderbolt adapter.Adapter) (*Mac, error) {
+func New(thunderbolt port.Port) (*Mac, error) {
 	mac := Mac{
 		thunderbolt: thunderbolt,
 	}

@@ -1,14 +1,14 @@
 package micro
 
 import (
-	"github.com/dianhadi/adapter/adapter"
+	"github.com/dianhadi/adapter/port"
 )
 
 type Micro struct {
 	title string
 }
 
-func New(config adapter.Config) (*Micro, error) {
+func New(config port.Config) (*Micro, error) {
 	micro := Micro{
 		title: config.Title,
 	}
